@@ -1,0 +1,9 @@
+apiVersion: landscaper.gardener.cloud/v1alpha1
+kind: Target
+metadata:
+  name: cluster-access
+  namespace: app
+spec:
+  type: landscaper.gardener.cloud/kubernetes-cluster
+  secretRef:
+    name: cluster-access-secret
